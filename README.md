@@ -1,3 +1,3 @@
 # Block über das Spiel ("*ABC lernen*")
 
-![bsp stride](pjojekt2.png)
+![bsp stride](projekt2.png)
