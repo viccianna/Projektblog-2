@@ -4,6 +4,7 @@ Ein Blog über unser programmieretes Spiel auf App-Labor.
 
 ![bsp stride](projekt2.png)
 
+#Inhalt
 
 [1. Einleitung und Idee](#1)
 
