@@ -26,3 +26,5 @@ Unsere ersten Ideen waren: Vokabeltrainer (für Englisch und Fachbegriffe z.B in
 
 ![bsp stride](imageprojektblog.exe/screen30anfang.png) 
 
+Der Einstieg in unser Spiel ist auf dem Screenshot hier rot eingekreist. Das Spiel beginnt mit unserem Startbildschirm, welcher auf dem Screenshot (links) zu sehen ist. Der Befehl "set screen(screenId)" ganz am anfang bewerkstelligt, dass ein bestimmter Screen auftaucht sobald man auf "Ausführen" (links auf dem Bildschirm) klickt. In unserem Fall ist die ScreenId "screen30" und demnach haben wir dies in das Kästchen eingegeben.
+
