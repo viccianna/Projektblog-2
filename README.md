@@ -27,4 +27,5 @@ Unsere ersten Ideen waren: Vokabeltrainer (für Englisch und Fachbegriffe z.B in
 ![bsp stride](imageprojektblog.exe/screen30anfang.png) 
 
 Der Einstieg in unser Spiel ist auf dem Screenshot hier rot eingekreist. Das Spiel beginnt mit unserem Startbildschirm, welcher auf dem Screenshot (links) zu sehen ist. Der Befehl "set screen(screenId)" ganz am anfang bewerkstelligt, dass ein bestimmter Screen auftaucht sobald man auf "Ausführen" (links auf dem Bildschirm) klickt. In unserem Fall ist die ScreenId "screen30" und demnach haben wir dies in das Kästchen eingegeben.
-
+Der nächste Befehl ist ein "if()"-Befehl. Wie auch die deutsche Übersetzung sagt, ist dieser Befehl eine bedingung, die wir definiert haben. In die leere Klammer haben wir in diesem Fall erneut "screen30" eingesetzt. Dies ist damit zu begründen, dass es sich bis hierher immernoch um den gleichen Screen handelt. Unter "if()" haben wir mit weiteren Befehlen einen Block erstellt, welcher das eigentlcihe Spiel einleitet.
+Zunächst folgt der Befehl "onEvent (id, type, callback)" verbunden mit "function()". 
