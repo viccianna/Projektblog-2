@@ -24,5 +24,5 @@ Unsere ersten Ideen waren: Vokabeltrainer (für Englisch und Fachbegriffe z.B in
 
 ## <a name="2"></a> Das Spiel
 
-![bsp stride](screen30anfang.png) 
+![bsp stride](imageprojektblog.exe/screen30anfang.png) 
 
