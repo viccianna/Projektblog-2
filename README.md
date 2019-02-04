@@ -25,3 +25,10 @@ Unsere ersten Ideen waren: Vokabeltrainer (für Englisch und Fachbegriffe z.B in
 ## <a name="2"></a> Das Spiel
 
 ...
+setScreen("screen30");
+if ("screen30") {
+  onEvent("button6", "click", function(event) {
+    var str = "screen" + randomNumber(1, 26);
+    setScreen(str);
+  });
+}
