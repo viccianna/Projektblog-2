@@ -34,4 +34,4 @@ Zusammenhängend mit diesem Befehlblock folgt nach dem eben Erläuterten der Bef
 
 ![bsp stride](imageprojektblog.exe/screen1ablauf.png) 
 
-Mit dem oben eingekreisten Block beginnt das eigentliche Spiel. Wie schon der vorherige Block beginnt auch dieser mit dem Befehl "*if()*". Diesmal steht in der Klammer "*screen1*". Da dieser an den zuvorkommenden Block angebunden ist, 
+Mit dem oben eingekreisten Block beginnt das eigentliche Spiel. Wie schon der vorherige Block beginnt auch dieser mit dem Befehl "*if()*". Diesmal steht in der Klammer "*screen1*". Da dieser an den zuvorkommenden Block angebunden ist, steht dieser Block in direkter Verbindung mit dem Ersten. Sobald also der erste Block abgelaufen ist, fängt die neue Schleife an. In diesem Fall haben wir als "*id*" "*screen1*" eingesetzt.
