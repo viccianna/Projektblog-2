@@ -25,6 +25,9 @@ Unsere ersten Ideen waren: Vokabeltrainer (für Englisch und Fachbegriffe z.B in
 
 ## <a name="2"></a> Das Spiel
 
+Wir haben die Hintergründe bzw. Screens als ertses erstellt. Dazu haben wir auf der Website oben links auf "Entwurf" geklickt. Daraufhin öffnete sich eine Spalte in der man verschiedene Optionen zum Gestalten des Screens auswählen kann wie zum Beispiel ein Textfeld hinzufügen oder die Farbe des Hintergrunds geändert werden kann. Zunächst haben wir dann 26 Screens erstellt und jeweils verucht eine andere Farbe zu erstellen. Danach wurde ein Textfeld eingefügt und die einzelnen Buchstaben in richter Größe hingeschrieben. Danach wirden zwei Felder für Bilder hinzugefügt. Als letztes haben wir noch einige Button hinzugefügt, das wird später noch genauer erklärt.
+
+
 ![bsp stride](imageprojektblog.exe/screen30anfang.png) 
 
 Der Einstieg in unser Spiel ist auf dem Screenshot hier rot eingekreist. Das Spiel beginnt mit unserem Startbildschirm, welcher auf dem Screenshot (links) zu sehen ist. Der Befehl "*set screen(screenId)*" ganz am anfang bewerkstelligt, dass ein bestimmter Screen auftaucht sobald man auf "*Ausführen*" (links auf dem Bildschirm) klickt. In unserem Fall ist die ScreenId "*screen30*" und demnach haben wir dies in das Kästchen eingegeben.
@@ -34,4 +37,4 @@ Zusammenhängend mit diesem Befehlblock folgt nach dem eben Erläuterten der Bef
 
 ![bsp stride](imageprojektblog.exe/screen1anfangrichtig.png) 
 
-Mit dem oben eingekreisten Block beginnt das eigentliche Spiel. Wie schon der vorherige Block beginnt auch dieser mit dem Befehl "*if()*". Diesmal steht in der Klammer "*screen1*". Da dieser an den zuvorkommenden Block angebunden ist, steht dieser Block in direkter Verbindung mit dem Ersten. Sobald also der erste Block abgelaufen ist, fängt die neue Schleife an. In diesem Fall haben wir als "*id*" "*screen1*" eingesetzt.
+Mit dem oben eingekreisten Block beginnt das eigentliche Spiel. Wie schon der vorherige Block beginnt auch dieser mit dem Befehl "*if()*". Diesmal steht in der Klammer "*screen1*", jedoch wird durch den ersten Block ein beliebiger Screen ausgesucht. Das bedeutet, dass "*screen1*" hier nur ein Beispiel ist und das Spiel so anfangen kann aber nicht muss. Da dieser an den zuvorkommenden Block angebunden ist, steht dieser Block in direkter Verbindung mit dem Ersten. Sobald also der erste Block abgelaufen ist, fängt die neue Schleife an. In diesem Fall haben steht dort als "*id*" "*screen1*". Damit öffnet sich ein neuer Screen (am Beispiel angepasst, siehe Screenshot links). Der darauffolgende Befehl ist erneut "*onEvent (id, type, callback)*". Die Klammern sind mit "*image1*", "*click*" und "*function()*" gefüllt. Kurz bedeutet dies, dass sobald man "*image1*" (Apfel) anklickt, passiert etwas. Was genau darauf folgt zeigt der nächste Befehl. Das drauffolgene "*playSound ()*" beinhaltet ein Audio, welches entweder aufgenommen oder hochgeladen werden muss. Unsere Audios wurden mit dem Handy aufgenommen und dann auf den Computer gespielt und gespeichert. Sobald man den befehl einfügt und anklickt, kann man den Sound auswählen.  
