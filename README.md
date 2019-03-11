@@ -47,3 +47,7 @@ In rot eingekreist sieht man hier einmal die Weiterführung zum vorherigen Bild.
 Daraufhin beginnt das erste Spiel: "ABC-lernen mit Bildern"
 
 ![bsp stride](images.exe./spiel1anfang.png)
+
+Hiermit beginnt das 1. Spiel. Das Ziel hierbei ist, dass man einen Buchstaben gegeben hat und man muss dazu das passende Bild anklicken, welches mit dem gezeigten Buchstaben als Wort anfängt. Ein Beispiel wäre: gegeben ist "A" und dann klickt man als Bild den Apfel an.
+
+Das Prinzip der Befehlkette machen wir hier am einem Beispiel klar. 
