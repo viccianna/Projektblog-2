@@ -29,7 +29,15 @@ Wir haben die Hintergründe bzw. Screens als ertses erstellt. Dazu haben wir auf
 
 ![bsp stride](images.exe./screen66anfang.png)
 
+Unser Spiel beginnt mit einem "*function*"-Block an. Dieser heisßt "showResults" und bezieht sich auf unsere Statistik welche wir erst später bei den eigentlichen Spielen eingebaut haben. Also sobald später eine Funktion angeklickt wird, wird dieser Befehlblock ausgeführt. Dieser beginnt mit "*setScreen*" mit der *ID* "screen66", welcher links auf dem Bild zu sehen ist. Darauf folgt der Befehl "*readRecords*" mit der *ID* "mytable". And diese ist eine weitere Funktion angebunden (dunkelgrün) mit der *ID* "records". In lila sieht man ein paar Variabeln, welche wir erstellt und definiert haben. Die erste *var* ist "Richtig=0", die Zweite ist "Falsch=0" und die Nächste ist "totalVotes=Records.lenght" ...
+
+....
+
+
 ![bsp stride](images.exe./screen67anfang.png)
 
 ![bsp stride](images.exe./screen30angang.png)
+
+Nachdem die vorherigen Befehlblöcke nun erklärt wurden, kommt jetzt der "richtige" Anfang des Spiels. Dieser beginnt mit dem schon definierten Befehl "*setScreen*" mit der *ID* "screen30". Damit wird automatisch dieser bestimmte Screen zu anfang des Spiels geöffnet. Als nächstes folgt ein "*if*"-Befehl. Dieser Befehl mit derselben *ID* wie eben beinhaltet mehrere Befehle angefangen mit "*onEvent*". In diesem Block steht "button6" als die *ID*, "click" als *type* und zum Schluss eine Funktion mit der Definition "event". Die "*onEvent*"Funktion beinhaltet zwei weitere Befehle und zwar "*playSound(ID)*, false" und "*setScreen(screen27)*". Zusammengesetzt bedeutet diese ganze Klammer nun, wenn man auf "screen30" ist und dann den Button "button6" angklickt, dass wird ein bestimmter Sound abgespielt und es wird ein andere Screen geöffnet. (Buuton6 sieht man auf dem Bild mit der Beschriftung: LOS)
+
 
