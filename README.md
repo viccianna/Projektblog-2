@@ -45,3 +45,5 @@ Nachdem die vorherigen Befehlblöcke nun erklärt wurden, kommt jetzt der "richt
 In rot eingekreist sieht man hier einmal die Weiterführung zum vorherigen Bild. Die Ausgangssituation war, dass man auf Screen27 landet. Sobald das geschieht, folgt wieder eine "*if*"-Schleife. Diese beinhaltet, eine "*onEvent*" Funktion. Da das eingekreiste erst einmal nur für die Auswahl der Spiele gilt, hat der Spieler ja eine gewisse Wahl. In diesem Fall, wenn er auf den Button "button1" klickt, wählt er das 1. Spiel, welches wir gleicfh näher erläutern. Diese Funktion enthält einen neue Variable, die so definiert ist, dass ihr *ID* gleich "str" ist und sich aus der *ID* "screen" * eine "randomNumber(1,26)" zusammensetzt. Das bedeutet, es wird aus den ganzen Screen, welche von "screen1" bis "screen26" gehen, ein Zufälliger ausgewählt. Danach wird der folgende Befehl diesen zufällig Ausgewählten öffnen. 
 
 Daraufhin beginnt das erste Spiel: "ABC-lernen mit Bildern"
+
+![bsp stride](images.exe./spiel1anfang)
