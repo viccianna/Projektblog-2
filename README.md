@@ -46,4 +46,4 @@ In rot eingekreist sieht man hier einmal die Weiterführung zum vorherigen Bild.
 
 Daraufhin beginnt das erste Spiel: "ABC-lernen mit Bildern"
 
-![bsp stride](images.exe./spiel1anfang)
+![bsp stride](images.exe./spiel1anfang.png)
