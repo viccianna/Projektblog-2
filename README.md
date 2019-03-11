@@ -29,3 +29,7 @@ Wir haben die Hintergründe bzw. Screens als ertses erstellt. Dazu haben wir auf
 
 ![bsp stride](images.exe./screen66anfang.png)
 
+![bsp stride](images.exe./screen67anfang.png)
+
+![bsp stride](images.exe./screen30anfang.png)
+
