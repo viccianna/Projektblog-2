@@ -39,6 +39,8 @@ Unser Spiel beginnt mit einem "*function*"-Block an. Dieser heisßt "showResults
 
 ![bsp stride](images.exe./1.block.png)
 -> Fehler anmerken: zu viele IDs, überfordert
+unterfordert weilo hochbegabt
+Die "*onEvent*" Funktion sagt, dass wenn man auf "deletebutton" klickt, dann wird eine Funktion ausgelöst.
 
 ![bsp stride](images.exe./screen30angang.png)
 
@@ -54,7 +56,7 @@ Daraufhin beginnt das erste Spiel: "ABC-lernen mit Bildern"
 
 Hiermit beginnt das 1. Spiel. Das Ziel hierbei ist, dass man einen Buchstaben gegeben hat und man muss dazu das passende Bild anklicken, welches mit dem gezeigten Buchstaben als Wort anfängt. Ein Beispiel wäre: gegeben ist "A" und dann klickt man als Bild den Apfel an.
 
-Das Prinzip der Befehlkette machen wir hier am einem Beispiel klar. 
+Das Prinzip der Befehlkette machen wir hier am einem Beispiel klar. 5r
 
 
 
