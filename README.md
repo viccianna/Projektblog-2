@@ -38,6 +38,7 @@ Unser Spiel beginnt mit einem "*function*"-Block an. Dieser heisßt "showResults
 ![bsp stride](images.exe./screen67anfang.png)
 
 ![bsp stride](images.exe./1.block.png)
+-> Fehler anmerken: zu viele IDs, überfordert
 
 ![bsp stride](images.exe./screen30angang.png)
 
