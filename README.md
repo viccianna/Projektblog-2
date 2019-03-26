@@ -27,6 +27,10 @@ Unsere ersten Ideen waren: Vokabeltrainer (für Englisch und Fachbegriffe z.B in
 
 Wir haben die Hintergründe bzw. Screens als ertses erstellt. Dazu haben wir auf der Website oben links auf "Entwurf" geklickt. Daraufhin öffnete sich eine Spalte in der man verschiedene Optionen zum Gestalten des Screens auswählen kann wie zum Beispiel ein Textfeld hinzufügen oder die Farbe des Hintergrunds geändert werden kann. Zunächst haben wir dann 26 Screens erstellt und jeweils verucht eine andere Farbe zu erstellen. Danach wurde ein Textfeld eingefügt und die einzelnen Buchstaben in richter Größe hingeschrieben. Danach wirden zwei Felder für Bilder hinzugefügt. Als letztes haben wir noch einige Button hinzugefügt, das wird später noch genauer erklärt.
 
+![bsp stride](images.exe./1.block.png)
+
+
+
 ![bsp stride](images.exe./screen66anfang.png)
 
 Unser Spiel beginnt mit einem "*function*"-Block an. Dieser heisßt "showResults" und bezieht sich auf unsere Statistik welche wir erst später bei den eigentlichen Spielen eingebaut haben. Also sobald später eine Funktion angeklickt wird, wird dieser Befehlblock ausgeführt. Dieser beginnt mit "*setScreen*" mit der *ID* "screen66", welcher links auf dem Bild zu sehen ist. Darauf folgt der Befehl "*readRecords*" mit der *ID* "mytable". And diese ist eine weitere Funktion angebunden (dunkelgrün) mit der *ID* "records". In lila sieht man ein paar Variabeln, welche wir erstellt und definiert haben. Die erste *var* ist "Richtig=0", die Zweite ist "Falsch=0" und die Nächste ist "totalVotes=Records.lenght" ...
