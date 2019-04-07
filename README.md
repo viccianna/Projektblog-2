@@ -147,6 +147,30 @@ Zuerst einmal haben wir auch für diese Aktion ein console.log also sozusagen ei
 Danach folgt das eigentliche Löschen, was durch die Funktion „deleteRecord“ „mytable“passiert. Diese hat die ID der Ergebnisse der Statistik. Wenn das löschen erfolgreich war, beziehungsweise Ergebnisse zum löschen da sind, wird das durch die Funktion „success“ ausgedrückt und die ID „Record deleted“ wird erstellt. Wenn es nicht erfolgreich war, oder keine Ergebnisse zum löschen da waren wird die ID „No record to delete“ erstellt. 
 So lassen sich die Vorgänge auch besser nachvollziehen.
 
+    if ("screen66") {
+      onEvent("deletebutton", "click", function(success ) {
+        deleteRecord("mytable", {id:1}, function(success) {
+        });
+      });
+    }
+    
+    onEvent("deletebutton", "click", function() {
+    readRecords("mytable", {}, function(records) {
+    for (var i =0; i < records.length; i++) {
+    console.log("Attempting to delete Record with id: " + (records[i]).id);
+
+    deleteRecord("mytable", {id:records[i].id}, function(success) {
+    if (success) {
+    console.log("Record deleted.");
+    }
+    else {
+    console.log("No record to delete.");
+    }
+    });
+    }
+    });
+    })
+
 Bei unserem zweiten Spiel geht es darum, dass die Spieler die richtige Schreibweise von vielen Wörtern lernen sollen. Dafür ist immer ein Symbol auf dem Bildschirm und drei Möglichkeiten, wie das Wort geschrieben werden könnte. 
 Auf das Spiel gelangt man, indem man auf dem Auswahlbildschirm („screen27“) auf den „button2“ klickt. Ähnlich wie beim ersten Spiel wird jetzt wieder ein zufälliger Bildschirm aufgerufen. Diesmal allerdings von den screens 31 bis 58. 
 Wie wir dann die Funktionen programmiert haben, werden wir beispielhaft an Screen 39 mit dem Bild von einem Igel erklären. 
