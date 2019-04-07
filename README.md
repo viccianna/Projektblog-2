@@ -4,14 +4,6 @@ Ein Blog über unser programmieretes Spiel auf App-Labor.
 
 ![bsp stride](projekt2.png)
 
-    setScreen("screen30");
-    if ("screen30") {
-      onEvent("button6", "click", function(event) {
-        playSound("esgehtlosAUDIO-2019-02-05-15-14-27.mp3", false);
-       setScreen("screen27");
-     });
-    }
-
 # Inhalt
 
 [1. Einleitung und Idee](#1)
@@ -51,7 +43,15 @@ Das Spiel beginnt jetzt mit einer „if“ Funktion. Wenn man sich also auf dem 
 Der Bildschirm 27, auf den man dann weitergeleitet wird, ist der Übersichtsbildschirm auf dem man sich für eins der drei Spiele entscheiden kann. Wenn man das erste Spiel spielen möchte, muss man auf den „button1“ klicken. 
 Mit der Variable, die wir dann eingefügt haben, definieren wir, dass „str“ ein  zufälliger Bildschirm zwischen 1 und 26 ist. Indem wir danach „setScreen str“ eingefügt haben wird jetzt ein einer dieser Screens zufällig aufgerufen. 
 Das ist wichtig für unser Spiel, da wir keine feste Reihenfolge der Buchstaben haben wollten, damit das Spiel nicht vorhersehbar wird. 
-![bsp stride](images.exe./spielanfang.png)
+
+    setScreen("screen30");
+    if ("screen30") {
+      onEvent("button6", "click", function(event) {
+        playSound("esgehtlosAUDIO-2019-02-05-15-14-27.mp3", false);
+       setScreen("screen27");
+     });
+    }
+    
 Für jede der 26 Buchstaben des Alphabets haben wir einen Screen mit zwei Symbolen erstellt. Eins der Symbole fängt mit dem Buchstaben an, der auf dem Bildschirm gezeigt wird und ein Symbol nicht. Das heißt die Spieler müssen sich entscheiden, welches Symbol richtig ist und auf das müssen sie dann drauf klicken. 
 Da es immer unterschiedlich, ob das richtige Symbol das erste oder das zweite ist, haben wir bei jedem „image“ programmiert, als was es gewertet werden soll.
 Bei „screen1“, auf dem das A abgebildet ist, ist das „image1“ also der Apfel das richtige Bild und das „image2“ also die Melonen sind das falsche Symbol. 
