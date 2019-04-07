@@ -268,6 +268,9 @@ Unser drittes Spiel ist dafür da, dass sich die Spieler noch mal alle Wörter z
       setScreen(str);
 
 Auf den Bildschirmen sind dann jeweils 4 Symbole mit der richtigen Schreibweise. 
+
+![bsp stride](images.exe./screen63)
+
 Beispielhaft werden wir das jetzt an dem „screen63“ zeigen. Dort sind eine Orange, eine Pizza, eine Qualle und Regen abgebildet. Wenn man jetzt beispielsweise auf den „button34“, also auf die Pizza klickt, wird der Sound „P wie Pizza“ gespielt. 
 
     if ("screen63") {
