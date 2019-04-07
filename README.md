@@ -47,10 +47,14 @@ Das ist wichtig für unser Spiel, da wir keine feste Reihenfolge der Buchstaben 
     setScreen("screen30");
     if ("screen30") {
       onEvent("button6", "click", function(event) {
-        playSound("esgehtlosAUDIO-2019-02-05-15-14-27.mp3", false);
+       playSound("esgehtlosAUDIO-2019-02-05-15-14-27.mp3", false);
        setScreen("screen27");
      });
     }
+    if ("screen27") {
+      onEvent("button1", "click", function(event) {
+        var str = "screen" + randomNumber(1, 26);
+        setScreen(str);
     
 Für jede der 26 Buchstaben des Alphabets haben wir einen Screen mit zwei Symbolen erstellt. Eins der Symbole fängt mit dem Buchstaben an, der auf dem Bildschirm gezeigt wird und ein Symbol nicht. Das heißt die Spieler müssen sich entscheiden, welches Symbol richtig ist und auf das müssen sie dann drauf klicken. 
 Da es immer unterschiedlich, ob das richtige Symbol das erste oder das zweite ist, haben wir bei jedem „image“ programmiert, als was es gewertet werden soll.
