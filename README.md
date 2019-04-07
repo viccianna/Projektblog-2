@@ -1,4 +1,4 @@
-# Block über das Spiel ("*ABC lernen*")
+# Blog über das Spiel ("*Das ABC macht Spaß!*")
 
 Ein Blog über unser programmieretes Spiel auf App-Labor.
 
