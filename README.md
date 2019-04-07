@@ -62,17 +62,47 @@ Bei „screen1“, auf dem das A abgebildet ist, ist das „image1“ also der A
 Wenn jetzt also „image1“ angeklickt wird, haben wir durch „playSound“ eingefügt, dass das Spiel den Satz „A wie Apfel“ spielt. Gleichzeitig wechselt das Bild auf den „Screen28“, auf dem ein GIF von einer Erde und einem Mond ist, die sich ein High Five geben. Das ist also unser Bildschirm, wenn man alles richtig gemacht hat. 
 Auf diesem Sieger Bildschirm ist unten eine Button, der „button5“. Wenn man auf diesen Knopf klickt, gelangt man wieder auf einen Bildschirm mit einer zufälligen beziehungsweise „random“ Nummer zwischen 1 und 26, kann das Spiel also weiterspielen.
 
+    if ("screen1") {
+      onEvent("image1", "click", function(event) {
+        playSound("AUD-20190129-WA0003.mp3", false);
+        setScreen("screen28");
+        onEvent("button5", "click", function(event) {
+          var str = "screen" + randomNumber(1, 26);
+          setScreen(str);
+        });
+   
 Gleichzeitig wird ein Eintrag in unsere Statistik generiert, dafür dass das richtige angeklickt wurde. Das haben wir mit der Funktion „createRecord“ generiert. Das Diagramm haben wir dann „mytable“ genannt und das Ergebnis was durch das klicken auf das richtige Bild gespeichert wird heißt „Richtig“.
 Mit dem „console.log“ definieren wir das Ergebnis noch mal und geben ihm eine ID, die dann zusammen mit dem Ergebnis „Richtig“ gespeichert wird.
+   
+        createRecord("mytable", {Ergebnis:'Richtig'}, function(record) {
+          console.log("Record created with id:" + record.id+ "und Ergebnis: " + record.Ergebnis);
+        });
+      });
 
 Wenn man allerdings auf das zweite und hier falsche Bild der Melonen klickt, also immer noch in der „if screen1“ Funktion auf „image2“ klickt, wird erst einmal der „sound“ „M wie Melone“ gespielt. Dann gelangt man auf den „screen29“. Auf diesem Bildschirm ist auch ein GIF, diesmal allerdings von einer traurigen Erde und einem traurig guckenden Mond. 
 Wenn man auf diesem Bildschirm auf „button4“ „clicked“ gelangt man wieder auf den Screen, auf dem man auf dem man den falschen Buchstaben ausgewählt hat. Hier also wieder auf den „screen1“ mit dem Buchstaben A, dem Apfel und den Melonen. Das haben wir so gemacht, damit die Kinder ihren Fehler merken und gucken können, was richtig gewesen wäre. 
 Auch für das Anklicken des falschen Bildes wird jetzt ein Eintrag mit „Ergebnis Falsch“ in „mytable“ gespeichert und eine ID für dieses Ereignis erstellt. 
 
+      onEvent("image2", "click", function(event) {
+        playSound("MeloneAUDIO-2019-02-06-15-18-10.mp3", false);
+        setScreen("screen29");
+        onEvent("button4", "click", function(event) {
+          setScreen("screen1");
+        });
+        createRecord("mytable", {Ergebnis:'Falsch'}, function(record) {
+          console.log("Record created with id:" + record.id+ "und Ergebnis: " + record.Ergebnis);
+          });
+      });
+  
 Wenn die Spieler dieses Spiel nicht mehr weiter spielen möchten, können sie auf den „zurück“ Knopf klicken, der hier der „button13“ ist. 
 Sobald sie das gemacht haben, werden sie zum Bildschirm 66 weitergeleitet, auf dem die Statistik mit den Ergebnissen von „Falsch“ und „Richtig“ ist.
 Das haben wir programmiert indem wir bei „if screen1“ geschrieben haben, dass die Funktion „showResults“ eintritt, wenn auf den „button13“ geklickt wird. Die Funktion „showResults“ haben wir ganz am Anfang des Spiels einmal definiert. 
 
+      if ("screen1") {
+        onEvent("button13", "click", function(event) {
+          showResults();
+        });
+  
 Die Funktion „showResults“ bewirkt erst einmal, dass der Bildschirm 66 aufgerufen wird. Auf diesem haben wir die Statistik 1 eingefügt, welche von Spiel 1 die Daten sammelt, wie oft das Falsche („Ergbnis Falsch“) und das Richtige („Ergebnis Richtig“) angeklickt wurden. Jedes Mal, wenn etwas falsches oder richtiges angeklickt wurde, bekommt dieses Einzelereignis eine ID, die dann von AppLap gespeichert wird. 
 Die Statistik die entsteht heißt „mytable“ und um sie zu erstellen mussten wir erst einmal ein paar Variablen definieren. 
 Die Ergebnisse „Richtig“ und „Falsch“ bekommen beide die Nummer „0“. Das ist wichtig, damit die Ergebnisse überhaupt eine Größe haben. 
