@@ -2,7 +2,15 @@
 
 Ein Blog über unser programmieretes Spiel auf App-Labor.
 
-                ![bsp stride](projekt2.png)
+![bsp stride](projekt2.png)
+
+    ![bsp stride]setScreen("screen30");
+      if ("screen30") {
+       onEvent("button6", "click", function(event) {
+         playSound("esgehtlosAUDIO-2019-02-05-15-14-27.mp3", false);
+         setScreen("screen27");
+          });
+      }
 
 # Inhalt
 
