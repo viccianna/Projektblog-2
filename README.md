@@ -12,6 +12,9 @@ Ein Blog über unser programmieretes Spiel auf App-Labor.
 [2. Das Spiel](#2)
 
 
+[3. Schlusswort](#3)
+
+
 ## <a name="1"></a> Einleitung und Idee
 
 Hallo und herzlich Willkommen auf diesem Blog.
@@ -103,7 +106,7 @@ Wenn man ein anderes Spiel spielen möchte, muss man auf den „zurück“ Knopf
 
 
 
-Schlusswort
+## <a name="3"></a> Schlusswort
 
 Jetzt wisst ihr, wie wir unsere App „Das ABC macht Spaß!“ programmiert haben. 
 Auch oder gerade weil es immer wieder einige Rückschläge oder komplexe Probleme gab hat es uns schlussendlich doch sehr viel Spaß gemacht, da wir sehr glücklich mit unserer Idee und dem Ergebnis waren und das Programm ein schönes Design hatte. 
