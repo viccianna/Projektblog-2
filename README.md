@@ -176,29 +176,127 @@ So lassen sich die Vorgänge auch besser nachvollziehen.
 
 Bei unserem zweiten Spiel geht es darum, dass die Spieler die richtige Schreibweise von vielen Wörtern lernen sollen. Dafür ist immer ein Symbol auf dem Bildschirm und drei Möglichkeiten, wie das Wort geschrieben werden könnte. 
 Auf das Spiel gelangt man, indem man auf dem Auswahlbildschirm („screen27“) auf den „button2“ klickt. Ähnlich wie beim ersten Spiel wird jetzt wieder ein zufälliger Bildschirm aufgerufen. Diesmal allerdings von den screens 31 bis 58. 
+
+    onEvent("button2", "click", function(event) {
+      var str = "screen" + randomNumber(31, 58);
+      setScreen(str);
+
 Wie wir dann die Funktionen programmiert haben, werden wir beispielhaft an Screen 39 mit dem Bild von einem Igel erklären. 
 Bei diesem Bildschirm sind die Antwortmöglichkeiten 1 und 3 („legel“ und „Ikel“) falsch und die Antwortmöglichkeit 2 („Igel“) ist richtig. 
 Wenn man jetzt also auf „text_input27“ („Ikel“) „clicked“, wird der Sound „nicht traurig sein“ gespielt. Alternativ haben wir noch andere Sounds bei falschen Antworten eingefügt. Beispielsweise „Schade, beim nächsten Mal“, „Ohh schade“ oder „Versuchs noch Mal“. 
 Gleichzeitig wird der Bildschirm 29 aufgerufen, also wieder der Bildschirm mit der traurigen Erde und dem Mond. Wenn man auf diesem Bildschirm auf den „weiter“ Knopf („button4“) klickt, gelangt man wieder auf den Screen 39 mit dem Igel und kann es noch einmal versuchen. 
+
+    if ("screen39") {
+      onEvent("text_input27", "click", function(event) {
+        playSound("nichttraurigseinAUDIO-2019-02-05-15-14-58.mp3", false);
+        setScreen("screen29");
+        onEvent("button4", "click", function(event) {
+          setScreen("screen39");
+        });
+        createRecord("mytable", {Ergebnis:'FalschB'}, function(record) {
+            
+          });
+      });
+
 So läuft es auch ab, wenn man auf den „text_input25“ (also legel) klickt, nur dass ein anderer Ton gespielt wird.
 Das Ergebnis wird wie beim ersten Spiel zu einer Statistik hinzu gefügt. Allerdings sind beide Statistiken unabhängig voneinander, dass heißt man kann sehen in welchem Spiel man besser ist und die Ergebnisse werden nicht zusammen angezeigt. 
 Auch diese Statistik heißt „mytable“, allerdings wird das Ergebnis hier nicht als „Falsch“, sondern als „FalschB“ gespeichert, damit es nicht bei der ersten Statistik dazu gerechnet wird. 
 
+    if ("screen39") {
+      onEvent("text_input25", "click", function(event) {
+        playSound("schadeAUDIO-2019-02-05-15-14-24.mp3", false);
+        setScreen("screen29");
+        onEvent("button4", "click", function(event) {
+          setScreen("screen39");
+        });
+        createRecord("mytable", {Ergebnis:'FalschB'}, function(record) {
+            
+          });
+      });
+
 Wenn man auf die richtige Antwortmöglichkeit, also „text_input26“ („Igel“) klickt, gelangt man wieder auf den Siegerbildschirm „screen28“ mit dem Mond und der Erde, die sich ein High Five geben. Diesmal wird der Sound „applaus, applaus“ gespielt. Alternativ haben wir noch die Töne „prima“, „weiter so“ und „gut gemacht“.
 Wenn man jetzt auf den „Weiter“ Knopf „button5“ klickt, gelangt man wieder auf einen zufälligen Bildschirm des Spiels. 
 Die richtige Antwort wird in der zweiten Statistik mit „RichtigB“ gespeichert. 
+
+      onEvent("text_input26", "click", function(event) {
+        playSound("applausAUDIO-2019-02-05-15-14-57.mp3", false);
+        setScreen("screen28");
+        onEvent("button5", "click", function(event) {
+          var str = "screen" + randomNumber(31, 58);
+          setScreen(str);
+        });
+        createRecord("mytable", {Ergebnis:'RichtigB'}, function(record) {
+          
+        });
+      });
+
 Von dem Bildschirm 39 gelangt man über den „Zurück“ Knopf („button84“) zur zweiten Statistik, indem die Funktion „showResultsB“ aufgerufen wird. 
-Die Funktion „showResultsB“ ist ähnlich aufgebaut wie „showResults“, allerdings sind die Variablen, die gleich 0 gesetzt sind, diesmal „FalschB“ und „RichtigB“. Außerdem wird kein Kuchendiagramm erstellt, sondern ein Balkendiagramm. Das wollten wir machen, um mehr Abwechslung in das Spiel zu bringen und da jeder andere Präferenzen hat, welche Art einer Statistik er lieber mag.
-Im Endeffekt heißen die Ergebnisse trotzdem „Richtig“ und „Falsch“ ohne B, indem wir diese label als den Wert definiert haben, der sich ergibt, wenn man die Ergebnisse „RichtigB“ und „FalschB“ durch die Gesamtzahl der Votes teilt und dann Mal hundert nimmt um die Zahlen als Prozent zu erhalten. 
+Die Funktion „showResultsB“ ist ähnlich aufgebaut wie „showResults“, allerdings sind die Variablen, die gleich 0 gesetzt sind, diesmal „FalschB“ und „RichtigB“. Außerdem wird kein Kuchendiagramm erstellt, sondern ein Balkendiagramm. 
+
+      onEvent("button84", "click", function(event) {
+        showResultsB();
+      });
+    }
+
+Das wollten wir machen, um mehr Abwechslung in das Spiel zu bringen und da jeder andere Präferenzen hat, welche Art einer Statistik er lieber mag.
+Im Endeffekt heißen die Ergebnisse trotzdem „Richtig“ und „Falsch“ ohne B, indem wir diese Label als den Wert definiert haben, der sich ergibt, wenn man die Ergebnisse „RichtigB“ und „FalschB“ durch die Gesamtzahl der Votes teilt und dann Mal hundert nimmt um die Zahlen als Prozent zu erhalten. 
+
+    function showResultsB() {
+      setScreen("screen66");
+      readRecords("mytable", {}, function(records) {
+        var RichtigB = 0;
+        var FalschB = 0;
+        var totalVotes = records.length;
+        for (var i =0; i < records.length; i++) {
+          if ((records[i]).Ergebnis == "RichtigB") {
+    RichtigB++;
+          } else {
+    FalschB++;
+          }
+        }
+        drawChart("chart1", "bar", [
+    	    ({ label: "Richtig", value: (RichtigB/totalVotes*100) }),
+    	    ({ label: "Falsch", value: (FalschB/totalVotes*100) })
+        ]);
+      });
+    }
 
 Unser drittes Spiel ist dafür da, dass sich die Spieler noch mal alle Wörter zu den passenden Buchstaben anhören können. Zu diesem Spiel gelangt man, wenn man auf der Seite 27 auf den „button3“ klickt. Es wird nun ein zufälliger Bildschirm von 59 bis 65 aufgerufen. 
+
+    onEvent("button3", "click", function(event) {
+      var str = "screen" + randomNumber(59, 65);
+      setScreen(str);
+
 Auf den Bildschirmen sind dann jeweils 4 Symbole mit der richtigen Schreibweise. 
 Beispielhaft werden wir das jetzt an dem „screen63“ zeigen. Dort sind eine Orange, eine Pizza, eine Qualle und Regen abgebildet. Wenn man jetzt beispielsweise auf den „button34“, also auf die Pizza klickt, wird der Sound „P wie Pizza“ gespielt. 
+
+    if ("screen63") {
+      onEvent("button33", "click", function(event) {                                    *Orange*
+        playSound("OAUDIO-2019-02-05-16-23-50.mp3", false);
+      });
+      onEvent("button34", "click", function(event) {                                    *Pizza*
+        playSound("PAUDIO-2019-02-05-16-24-18.mp3", false);
+      });
+      onEvent("button35", "click", function(event) {                                    *Qualle*
+        playSound("QAUDIO-2019-02-05-16-34-58.mp3", false);
+      });
+      onEvent("button36", "click", function(event) {                                    *Regen*
+        playSound("RegenAUDIO-2019-02-05-16-54-39.mp3", false);
+      });
+
 Um auf den nächsten Bildschirm zu gelangen, muss man auf „weiter“ („button38“) klicken und wird auf einen zufälligen Bildschirm des Spiels weitergeleitet. 
+
+      onEvent("button38", "click", function(event) {
+        var str = "screen" + randomNumber(59, 65);
+        setScreen(str);
+      });
+
 Wenn man ein anderes Spiel spielen möchte, muss man auf den „zurück“ Knopf („button37“) klicken und es wird wieder der Startbildschirm 27 aufgerufen, auf dem man dann die Wahl zwischen einem der drei Spiele hat.
 
-
-
+      onEvent("button37", "click", function(event) {
+        setScreen("screen27");
+      });
+    }
 
 ## <a name="3"></a> Schlusswort
 
