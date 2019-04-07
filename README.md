@@ -27,8 +27,9 @@ Uns war klar, dass wir ein Projekt machen wollten, was einen tieferen Sinn hat u
 Der nächste Einfall, den wir dann hatten, hat uns dafür umso besser gefallen. Wir haben überlegt, eine Alphabet und Wörter Lernapp für Kinder zu erstellen!
 Auf diese Idee sind wir auch dadurch gekommen, dass wir beide jüngere Geschwister haben und mit diesen auch ab und zu die Buchstaben und Wörter durch Bilder in Bilderbüchern gelernt haben.
 
-Wichtig war uns bei der Entwicklung des Spiels nicht nur der praktische Nutzen, sondern auch die Ästhetik. Wir wollten schließlich, dass die Kinder Spaß beim spielen haben und sich beim anschauen der Bildschirme freuen. 
-Darauf haben wir auch bei unserer Farbauswahl geachtet. Jeder Bildschirm ist in einer pastelligen Variante einer bunten Farbe gehalten, damit es schön aussieht aber die Spieler gleichzeitig nicht von einem sehr knalligen Hintergrund abgelenkt sind.
+Wichtig war uns bei der Entwicklung des Spiels nicht nur der praktische Nutzen, sondern auch die Ästhetik. Wir wollten schließlich, dass die Kinder Spaß beim Spielen haben und sich beim Anschauen der Bildschirme freuen. 
+Wir haben die Hintergründe bzw. Screens als erstes erstellt. Dazu haben wir auf der Website oben links auf "Entwurf" geklickt. Daraufhin öffnete sich eine Spalte in der man verschiedene Optionen zum Gestalten des Screens auswählen kann wie zum Beispiel ein Textfeld hinzufügen oder die Farbe des Hintergrunds geändert werden kann. Zunächst haben wir dann 26 Screens erstellt.
+Dabei haben wir auch bei unserer Farbauswahl geachtet. Jeder Bildschirm ist in einer pastelligen Variante einer bunten Farbe gehalten, damit es schön aussieht aber die Spieler gleichzeitig nicht von einem sehr knalligen Hintergrund abgelenkt sind.
 Bei den Symbolen, die wir zu den einzelnen Wörtern ausgewählt haben, war uns auch wichtig, dass es Dinge sind die Kinder kennen und gerne mögen. Beispielsweise Tiere, Essen oder das Wetter. 
 Damit die Buchstaben und Wörter besser verinnerlicht werden, wollten wir auf jeden Fall auch noch Töne einfügen. Am authentischsten fanden wir es, wenn diese nicht von uns, sondern ebenfalls von einem Kind gesprochen werden. Deshalb haben wir einen Bruder gefragt, ob er  die Sätze einsprechen kann. Gegen ein Eis hat er sich bereit erklärt. 
 Zuletzt ist es auch entscheidend für uns gewesen, dass die Spieler motiviert werden. Deshalb haben wir Töne wie „Applaus, Applaus“, „Weiter so!“ oder „Schade, beim nächsten Mal“ aufgenommen und eingefügt, damit die Kinder angefeuert werden weiter zu spielen und die Buchstaben zu lernen. 
@@ -39,8 +40,8 @@ Am Ende hat dann nur noch ein Name gefehlt. Schließlich haben wir uns für  „
 
 ## <a name="2"></a> Das Spiel
 
-Das Spiel beginnt jetzt mit einer „if“ Funktion. Wenn man sich also auf dem „screen30“ befindet und den „button6“ klickt, wird der Sound „es geht los“ gespielt und der „screen27“ aufgerufen. Der Button 6 ist der „Los“ Knopf auf dem Startbildschirm. 
-Der Bildschirm 27, auf den man dann weitergeleitet wird, ist der Übersichtsbildschirm auf dem man sich für eins der drei Spiele entscheiden kann. Wenn man das erste Spiel spielen möchte, muss man auf den „button1“ klicken. 
+Das Spiel beginnt jetzt mit einer „*if*“ Funktion. Wenn man sich also auf dem „screen30“ befindet und den „button6“ klickt, wird der Sound „es geht los“ gespielt und der „screen27“ aufgerufen. Der Button 6 ist der „Los“ Knopf auf dem Startbildschirm. 
+Der Bildschirm 27, auf den man dann weitergeleitet wird, ist der Übersichtsbildschirm auf dem man sich für eins der drei Spiele entscheiden kann. Wenn man das erste Spiel "*ABC lernen mit Bildern*" spielen möchte, muss man auf den „button1“ klicken. 
 Mit der Variable, die wir dann eingefügt haben, definieren wir, dass „str“ ein  zufälliger Bildschirm zwischen 1 und 26 ist. Indem wir danach „setScreen str“ eingefügt haben wird jetzt ein einer dieser Screens zufällig aufgerufen. 
 Das ist wichtig für unser Spiel, da wir keine feste Reihenfolge der Buchstaben haben wollten, damit das Spiel nicht vorhersehbar wird. 
 
@@ -62,7 +63,7 @@ Bei „screen1“, auf dem das A abgebildet ist, ist das „image1“ also der A
 
 ![bsp stride](images.exe./screen1.png)
 
-Wenn jetzt also „image1“ angeklickt wird, haben wir durch „playSound“ eingefügt, dass das Spiel den Satz „A wie Apfel“ spielt. Gleichzeitig wechselt das Bild auf den „Screen28“, auf dem ein GIF von einer Erde und einem Mond ist, die sich ein High Five geben. Das ist also unser Bildschirm, wenn man alles richtig gemacht hat. 
+Wenn jetzt also „image1“ angeklickt wird, haben wir durch „*playSound*“ eingefügt, dass das Spiel den Satz „A wie Apfel“ spielt. Gleichzeitig wechselt das Bild auf den „Screen28“, auf dem ein GIF von einer Erde und einem Mond ist, die sich ein High Five geben. Das ist also unser Bildschirm, wenn man alles richtig gemacht hat. 
 Auf diesem Sieger Bildschirm ist unten eine Button, der „button5“. Wenn man auf diesen Knopf klickt, gelangt man wieder auf einen Bildschirm mit einer zufälligen beziehungsweise „random“ Nummer zwischen 1 und 26, kann das Spiel also weiterspielen.
 
     if ("screen1") {
@@ -75,14 +76,14 @@ Auf diesem Sieger Bildschirm ist unten eine Button, der „button5“. Wenn man 
         });
    
 Gleichzeitig wird ein Eintrag in unsere Statistik generiert, dafür dass das richtige angeklickt wurde. Das haben wir mit der Funktion „createRecord“ generiert. Das Diagramm haben wir dann „mytable“ genannt und das Ergebnis was durch das klicken auf das richtige Bild gespeichert wird heißt „Richtig“.
-Mit dem „console.log“ definieren wir das Ergebnis noch mal und geben ihm eine ID, die dann zusammen mit dem Ergebnis „Richtig“ gespeichert wird.
+Mit dem „console.log“ definieren wir das Ergebnis noch mal und geben ihm eine *ID*, die dann zusammen mit dem Ergebnis „Richtig“ gespeichert wird.
    
         createRecord("mytable", {Ergebnis:'Richtig'}, function(record) {
           console.log("Record created with id:" + record.id+ "und Ergebnis: " + record.Ergebnis);
         });
       });
 
-Wenn man allerdings auf das zweite und hier falsche Bild der Melonen klickt, also immer noch in der „if screen1“ Funktion auf „image2“ klickt, wird erst einmal der „sound“ „M wie Melone“ gespielt. Dann gelangt man auf den „screen29“. Auf diesem Bildschirm ist auch ein GIF, diesmal allerdings von einer traurigen Erde und einem traurig guckenden Mond. 
+Wenn man allerdings auf das zweite und hier falsche Bild der Melonen klickt, also immer noch in der „*if screen1*“ Funktion auf „image2“ klickt, wird erst einmal der „sound“ „M wie Melone“ gespielt. Dann gelangt man auf den „screen29“. Auf diesem Bildschirm ist auch ein GIF, diesmal allerdings von einer traurigen Erde und einem traurig guckenden Mond. 
 Wenn man auf diesem Bildschirm auf „button4“ „clicked“ gelangt man wieder auf den Screen, auf dem man auf dem man den falschen Buchstaben ausgewählt hat. Hier also wieder auf den „screen1“ mit dem Buchstaben A, dem Apfel und den Melonen. Das haben wir so gemacht, damit die Kinder ihren Fehler merken und gucken können, was richtig gewesen wäre. 
 Auch für das Anklicken des falschen Bildes wird jetzt ein Eintrag mit „Ergebnis Falsch“ in „mytable“ gespeichert und eine ID für dieses Ereignis erstellt. 
 
@@ -99,20 +100,20 @@ Auch für das Anklicken des falschen Bildes wird jetzt ein Eintrag mit „Ergebn
   
 Wenn die Spieler dieses Spiel nicht mehr weiter spielen möchten, können sie auf den „zurück“ Knopf klicken, der hier der „button13“ ist. 
 Sobald sie das gemacht haben, werden sie zum Bildschirm 66 weitergeleitet, auf dem die Statistik mit den Ergebnissen von „Falsch“ und „Richtig“ ist.
-Das haben wir programmiert indem wir bei „if screen1“ geschrieben haben, dass die Funktion „showResults“ eintritt, wenn auf den „button13“ geklickt wird. Die Funktion „showResults“ haben wir ganz am Anfang des Spiels einmal definiert. 
+Das haben wir programmiert indem wir bei „*if screen1*“ geschrieben haben, dass die Funktion „*showResults*“ eintritt, wenn auf den „button13“ geklickt wird. Die Funktion „*showResults*“ haben wir ganz am Anfang des Spiels einmal definiert. 
 
       if ("screen1") {
         onEvent("button13", "click", function(event) {
           showResults();
         });
   
-Die Funktion „showResults“ bewirkt erst einmal, dass der Bildschirm 66 aufgerufen wird. Auf diesem haben wir die Statistik 1 eingefügt, welche von Spiel 1 die Daten sammelt, wie oft das Falsche („Ergbnis Falsch“) und das Richtige („Ergebnis Richtig“) angeklickt wurden. Jedes Mal, wenn etwas falsches oder richtiges angeklickt wurde, bekommt dieses Einzelereignis eine ID, die dann von AppLap gespeichert wird. 
+Die Funktion „*showResults*“ bewirkt erst einmal, dass der Bildschirm 66 aufgerufen wird. Auf diesem haben wir die Statistik 1 eingefügt, welche von Spiel 1 die Daten sammelt, wie oft das Falsche („Ergbnis Falsch“) und das Richtige („Ergebnis Richtig“) angeklickt wurden. Jedes Mal, wenn etwas falsches oder richtiges angeklickt wurde, bekommt dieses Einzelereignis eine ID, die dann von AppLap gespeichert wird. 
 Die Statistik die entsteht heißt „mytable“ und um sie zu erstellen mussten wir erst einmal ein paar Variablen definieren. 
 Die Ergebnisse „Richtig“ und „Falsch“ bekommen beide die Nummer „0“. Das ist wichtig, damit die Ergebnisse überhaupt eine Größe haben. 
-Die gesamten Ergebnisse (definiert als „totalVotes“) ergeben zusammen die gesamte Größe der Statistik („totalVotes“ → „records.length“). 
+Die gesamten Ergebnisse (definiert als „totalVotes“) ergeben zusammen die gesamte Größe der Statistik („totalVotes“ → „*records.length*“). 
 Wenn nun das Ergebnis ( „var i „) 0, also entweder „Falsch“ oder „Richtig“ ist, wird das zu der Statistik hinzugefügt. Wenn die Antwort also „Richtig“ ist, wird das auch mit dem Wort „Richtig“ in der Statistik gespeichert, wenn die Antwort nicht richtig ist, wird es mit dem Wort „Falsch“ gespeichert. 
 
-Aus diesen Daten wird dann mithilfe von „drawChart“ und „pie“ eine PieChart oder auf Deutsch ein Kuchendiagramm erstellt, welches die relative Anzahl der falschen und der richtigen Antworten in Prozent anzeigt. Das haben wir dadurch erreicht, dass wir beiden Möglichkeiten die Wertigkeit („value“) Eins gegeben haben und diese dann durch die gesamte Menge der Ergebnisse geteilt und Mal hundert genommen wird. 
+Aus diesen Daten wird dann mithilfe von „*drawChart*“ und „pie“ eine PieChart oder auf Deutsch ein Kuchendiagramm erstellt, welches die relative Anzahl der falschen und der richtigen Antworten in Prozent anzeigt. Das haben wir dadurch erreicht, dass wir beiden Möglichkeiten die Wertigkeit („value“) Eins gegeben haben und diese dann durch die gesamte Menge der Ergebnisse geteilt und Mal hundert genommen wird. 
 
     function showResults() {
       setScreen("screen66");
@@ -146,8 +147,8 @@ Von diesem Bildschirm kann man jetzt über den zurück Knopf („button75“) wi
 Der selbe Mechanismus funktioniert bei den restlichen Buchstaben des ersten Spiels, es ist nur immer unterschiedlich, ob das erste oder das zweite Bild das richtige ist. Außerdem sind natürlich alle Nummern der „screens“ und der „buttons“, sowie der „images“ unterschiedlich. 
 
 Möchte man allerdings die Ergebnisse löschen beziehungsweise zurücksetzen, kann man auf den „Löschen“ Knopf klicken. Das ist der „deletebutton“ und was dann passiert haben wir mit dem Event „deletebutton clicked“ programmiert. Dieser Button löscht die Ergebnisse von „mytable“ . 
-Zuerst einmal haben wir auch für diese Aktion ein console.log also sozusagen eine ID erstellt, die wir „Attemting to delete Record with id: „ genannt haben. 
-Danach folgt das eigentliche Löschen, was durch die Funktion „deleteRecord“ „mytable“passiert. Diese hat die ID der Ergebnisse der Statistik. Wenn das löschen erfolgreich war, beziehungsweise Ergebnisse zum löschen da sind, wird das durch die Funktion „success“ ausgedrückt und die ID „Record deleted“ wird erstellt. Wenn es nicht erfolgreich war, oder keine Ergebnisse zum löschen da waren wird die ID „No record to delete“ erstellt. 
+Zuerst einmal haben wir auch für diese Aktion ein console.log also sozusagen eine *ID* erstellt, die wir „Attemting to delete Record with id: „ genannt haben. 
+Danach folgt das eigentliche Löschen, was durch die Funktion „deleteRecord“ „mytable“passiert. Diese hat die *ID* der Ergebnisse der Statistik. Wenn das Löschen erfolgreich war, beziehungsweise Ergebnisse zum löschen da sind, wird das durch die Funktion „success“ ausgedrückt und die *ID* „Record deleted“ wird erstellt. Wenn es nicht erfolgreich war, oder keine Ergebnisse zum löschen da waren wird die ID „No record to delete“ erstellt. 
 So lassen sich die Vorgänge auch besser nachvollziehen.
 
     if ("screen66") {
@@ -174,8 +175,8 @@ So lassen sich die Vorgänge auch besser nachvollziehen.
     });
     })
 
-Bei unserem zweiten Spiel geht es darum, dass die Spieler die richtige Schreibweise von vielen Wörtern lernen sollen. Dafür ist immer ein Symbol auf dem Bildschirm und drei Möglichkeiten, wie das Wort geschrieben werden könnte. 
-Auf das Spiel gelangt man, indem man auf dem Auswahlbildschirm („screen27“) auf den „button2“ klickt. Ähnlich wie beim ersten Spiel wird jetzt wieder ein zufälliger Bildschirm aufgerufen. Diesmal allerdings von den screens 31 bis 58. 
+Bei unserem zweiten Spiel "*ABC lernen mit Wörtern*" geht es darum, dass die Spieler die richtige Schreibweise von vielen Wörtern lernen sollen. Dafür ist immer ein Symbol auf dem Bildschirm und drei Möglichkeiten, wie das Wort geschrieben werden könnte. 
+Auf das Spiel gelangt man, indem man auf dem Auswahlbildschirm („screen27“) auf den „button2“ klickt. Ähnlich wie beim ersten Spiel wird jetzt wieder ein zufälliger Bildschirm aufgerufen. Diesmal allerdings von den Screens 31 bis 58. 
 
     onEvent("button2", "click", function(event) {
       var str = "screen" + randomNumber(31, 58);
@@ -264,7 +265,7 @@ Im Endeffekt heißen die Ergebnisse trotzdem „Richtig“ und „Falsch“ ohne
       });
     }
 
-Unser drittes Spiel ist dafür da, dass sich die Spieler noch mal alle Wörter zu den passenden Buchstaben anhören können. Zu diesem Spiel gelangt man, wenn man auf der Seite 27 auf den „button3“ klickt. Es wird nun ein zufälliger Bildschirm von 59 bis 65 aufgerufen. 
+Unser drittes Spiel "*ABC lernen durch Hören*" ist dafür da, dass sich die Spieler noch mal alle Wörter zu den passenden Buchstaben anhören können. Zu diesem Spiel gelangt man, wenn man auf der Seite 27 auf den „button3“ klickt. Es wird nun ein zufälliger Bildschirm von 59 bis 65 aufgerufen. 
 
     onEvent("button3", "click", function(event) {
       var str = "screen" + randomNumber(59, 65);
