@@ -111,9 +111,34 @@ Wenn nun das Ergebnis ( „var i „) 0, also entweder „Falsch“ oder „Rich
 
 Aus diesen Daten wird dann mithilfe von „drawChart“ und „pie“ eine PieChart oder auf Deutsch ein Kuchendiagramm erstellt, welches die relative Anzahl der falschen und der richtigen Antworten in Prozent anzeigt. Das haben wir dadurch erreicht, dass wir beiden Möglichkeiten die Wertigkeit („value“) Eins gegeben haben und diese dann durch die gesamte Menge der Ergebnisse geteilt und Mal hundert genommen wird. 
 
+    function showResults() {
+      setScreen("screen66");
+      readRecords("mytable", {}, function(records) {
+        var Richtig = 0;
+        var Falsch = 0;
+        var totalVotes = records.length;
+        for (var i =0; i < records.length; i++) {
+          if ((records[i]).Ergebnis == "Richtig") {
+    Richtig++;
+          } else {
+    Falsch++;
+          }
+        }
+        drawChart("chart1", "pie", [
+    	    ({ label: "Richtig", value: (Richtig/totalVotes*100) }),
+    	    ({ label: "Falsch", value: (Falsch/totalVotes*100) })
+        ]);
+      });
+    }
+
 So kann sich nun jeder Spieler anschauen, wie oft er falsch und wie oft er richtig lag. 
 
 Von diesem Bildschirm kann man jetzt über den zurück Knopf („button75“) wieder auf den Bildschirm 27 gelangen, auf dem man wieder die Auswahl zwischen den drei Spielen hat. 
+
+    if ("screen66") {
+      onEvent("button75", "click", function(event) {
+        setScreen("screen27");
+      });
 
 Der selbe Mechanismus funktioniert bei den restlichen Buchstaben des ersten Spiels, es ist nur immer unterschiedlich, ob das erste oder das zweite Bild das richtige ist. Außerdem sind natürlich alle Nummern der „screens“ und der „buttons“, sowie der „images“ unterschiedlich. 
 
