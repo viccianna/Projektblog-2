@@ -2,7 +2,7 @@
 
 Ein Blog über unser programmieretes Spiel auf App-Labor.
 
-![bsp stride](projekt2.png)
+                ![bsp stride](projekt2.png)
 
 # Inhalt
 
