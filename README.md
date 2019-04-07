@@ -59,6 +59,9 @@ Das ist wichtig für unser Spiel, da wir keine feste Reihenfolge der Buchstaben 
 Für jede der 26 Buchstaben des Alphabets haben wir einen Screen mit zwei Symbolen erstellt. Eins der Symbole fängt mit dem Buchstaben an, der auf dem Bildschirm gezeigt wird und ein Symbol nicht. Das heißt die Spieler müssen sich entscheiden, welches Symbol richtig ist und auf das müssen sie dann drauf klicken. 
 Da es immer unterschiedlich, ob das richtige Symbol das erste oder das zweite ist, haben wir bei jedem „image“ programmiert, als was es gewertet werden soll.
 Bei „screen1“, auf dem das A abgebildet ist, ist das „image1“ also der Apfel das richtige Bild und das „image2“ also die Melonen sind das falsche Symbol. 
+
+![bsp stride](images.exe./bilder.jpg)
+
 Wenn jetzt also „image1“ angeklickt wird, haben wir durch „playSound“ eingefügt, dass das Spiel den Satz „A wie Apfel“ spielt. Gleichzeitig wechselt das Bild auf den „Screen28“, auf dem ein GIF von einer Erde und einem Mond ist, die sich ein High Five geben. Das ist also unser Bildschirm, wenn man alles richtig gemacht hat. 
 Auf diesem Sieger Bildschirm ist unten eine Button, der „button5“. Wenn man auf diesen Knopf klickt, gelangt man wieder auf einen Bildschirm mit einer zufälligen beziehungsweise „random“ Nummer zwischen 1 und 26, kann das Spiel also weiterspielen.
 
