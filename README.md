@@ -183,6 +183,9 @@ Auf das Spiel gelangt man, indem man auf dem Auswahlbildschirm („screen27“) 
 
 Wie wir dann die Funktionen programmiert haben, werden wir beispielhaft an Screen 39 mit dem Bild von einem Igel erklären. 
 Bei diesem Bildschirm sind die Antwortmöglichkeiten 1 und 3 („legel“ und „Ikel“) falsch und die Antwortmöglichkeit 2 („Igel“) ist richtig. 
+
+![bsp stride](images.exe./screen39.png)
+
 Wenn man jetzt also auf „text_input27“ („Ikel“) „clicked“, wird der Sound „nicht traurig sein“ gespielt. Alternativ haben wir noch andere Sounds bei falschen Antworten eingefügt. Beispielsweise „Schade, beim nächsten Mal“, „Ohh schade“ oder „Versuchs noch Mal“. 
 Gleichzeitig wird der Bildschirm 29 aufgerufen, also wieder der Bildschirm mit der traurigen Erde und dem Mond. Wenn man auf diesem Bildschirm auf den „weiter“ Knopf („button4“) klickt, gelangt man wieder auf den Screen 39 mit dem Igel und kann es noch einmal versuchen. 
 
