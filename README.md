@@ -259,6 +259,8 @@ Die Funktion „showResultsB“ ist ähnlich aufgebaut wie „showResults“, al
         showResultsB();
       });
     }
+        
+![bsp stride](images.exe./screen67.png)    
 
 Das wollten wir machen, um mehr Abwechslung in das Spiel zu bringen und da jeder andere Präferenzen hat, welche Art einer Statistik er lieber mag.
 Im Endeffekt heißen die Ergebnisse trotzdem „Richtig“ und „Falsch“ ohne B, indem wir diese Label als den Wert definiert haben, der sich ergibt, wenn man die Ergebnisse „RichtigB“ und „FalschB“ durch die Gesamtzahl der Votes teilt und dann Mal hundert nimmt um die Zahlen als Prozent zu erhalten. 
