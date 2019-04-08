@@ -64,6 +64,9 @@ Bei „screen1“, auf dem das A abgebildet ist, ist das „image1“ also der A
 ![bsp stride](images.exe./screen1.png)
 
 Wenn jetzt also „image1“ angeklickt wird, haben wir durch „*playSound*“ eingefügt, dass das Spiel den Satz „A wie Apfel“ spielt. Gleichzeitig wechselt das Bild auf den „Screen28“, auf dem ein GIF von einer Erde und einem Mond ist, die sich ein High Five geben. Das ist also unser Bildschirm, wenn man alles richtig gemacht hat. 
+
+![bsp stride](images.exe./erdeglücklich.gif)
+
 Auf diesem Sieger Bildschirm ist unten eine Button, der „button5“. Wenn man auf diesen Knopf klickt, gelangt man wieder auf einen Bildschirm mit einer zufälligen beziehungsweise „random“ Nummer zwischen 1 und 26, kann das Spiel also weiterspielen.
 
     if ("screen1") {
