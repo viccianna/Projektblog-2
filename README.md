@@ -47,7 +47,7 @@ Der Bildschirm 27, auf den man dann weitergeleitet wird, ist der Übersichtsbild
 
 Wenn man das erste Spiel "*ABC lernen mit Bildern*" spielen möchte, muss man auf den „button1“ klicken. 
 
-![bsp stride](images.exe./apfel.png)
+![bsp stride](images.exe./apfel.png)        (Diese Screenshots sollen eine Gesamtübersicht über die Befehlblöcke zur Orientierung dienen und werden daher vor jeder Spielerläuterung eingefügt)
 
 Mit der Variable, die wir dann eingefügt haben, definieren wir, dass „str“ ein  zufälliger Bildschirm zwischen 1 und 26 ist. Indem wir danach „setScreen str“ eingefügt haben wird jetzt ein einer dieser Screens zufällig aufgerufen. 
 Das ist wichtig für unser Spiel, da wir keine feste Reihenfolge der Buchstaben haben wollten, damit das Spiel nicht vorhersehbar wird. 
