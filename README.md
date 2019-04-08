@@ -147,6 +147,8 @@ Aus diesen Daten wird dann mithilfe von „*drawChart*“ und „pie“ eine Pie
 
 So kann sich nun jeder Spieler anschauen, wie oft er falsch und wie oft er richtig lag. 
 
+![bsp stride](images.exe./screen66.png)
+
 Von diesem Bildschirm kann man jetzt über den zurück Knopf („button75“) wieder auf den Bildschirm 27 gelangen, auf dem man wieder die Auswahl zwischen den drei Spielen hat. 
 
     if ("screen66") {
