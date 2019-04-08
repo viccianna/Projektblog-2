@@ -46,6 +46,9 @@ Der Bildschirm 27, auf den man dann weitergeleitet wird, ist der Übersichtsbild
 ![bsp stride](images.exe./screen27.png)
 
 Wenn man das erste Spiel "*ABC lernen mit Bildern*" spielen möchte, muss man auf den „button1“ klicken. 
+
+![bsp stride](images.exe./apfel.png)
+
 Mit der Variable, die wir dann eingefügt haben, definieren wir, dass „str“ ein  zufälliger Bildschirm zwischen 1 und 26 ist. Indem wir danach „setScreen str“ eingefügt haben wird jetzt ein einer dieser Screens zufällig aufgerufen. 
 Das ist wichtig für unser Spiel, da wir keine feste Reihenfolge der Buchstaben haben wollten, damit das Spiel nicht vorhersehbar wird. 
 
@@ -194,6 +197,9 @@ Auf das Spiel gelangt man, indem man auf dem Auswahlbildschirm („screen27“) 
       var str = "screen" + randomNumber(31, 58);
       setScreen(str);
 
+
+![bsp stride](images.exe./igel.png)
+
 Wie wir dann die Funktionen programmiert haben, werden wir beispielhaft an Screen 39 mit dem Bild von einem Igel erklären. 
 Bei diesem Bildschirm sind die Antwortmöglichkeiten 1 und 3 („legel“ und „Ikel“) falsch und die Antwortmöglichkeit 2 („Igel“) ist richtig. 
 
@@ -282,6 +288,8 @@ Unser drittes Spiel "*ABC lernen durch Hören*" ist dafür da, dass sich die Spi
     onEvent("button3", "click", function(event) {
       var str = "screen" + randomNumber(59, 65);
       setScreen(str);
+
+![bsp stride](images.exe./qualle.png)
 
 Auf den Bildschirmen sind dann jeweils 4 Symbole mit der richtigen Schreibweise. 
 
