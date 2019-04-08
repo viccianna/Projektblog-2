@@ -41,7 +41,11 @@ Am Ende hat dann nur noch ein Name gefehlt. Schließlich haben wir uns für  „
 ## <a name="2"></a> Das Spiel
 
 Das Spiel beginnt jetzt mit einer „*if*“ Funktion. Wenn man sich also auf dem „screen30“ befindet und den „button6“ klickt, wird der Sound „es geht los“ gespielt und der „screen27“ aufgerufen. Der Button 6 ist der „Los“ Knopf auf dem Startbildschirm. 
-Der Bildschirm 27, auf den man dann weitergeleitet wird, ist der Übersichtsbildschirm auf dem man sich für eins der drei Spiele entscheiden kann. Wenn man das erste Spiel "*ABC lernen mit Bildern*" spielen möchte, muss man auf den „button1“ klicken. 
+Der Bildschirm 27, auf den man dann weitergeleitet wird, ist der Übersichtsbildschirm auf dem man sich für eins der drei Spiele entscheiden kann. 
+
+![bsp stride](images.exe./screen27.png)
+
+Wenn man das erste Spiel "*ABC lernen mit Bildern*" spielen möchte, muss man auf den „button1“ klicken. 
 Mit der Variable, die wir dann eingefügt haben, definieren wir, dass „str“ ein  zufälliger Bildschirm zwischen 1 und 26 ist. Indem wir danach „setScreen str“ eingefügt haben wird jetzt ein einer dieser Screens zufällig aufgerufen. 
 Das ist wichtig für unser Spiel, da wir keine feste Reihenfolge der Buchstaben haben wollten, damit das Spiel nicht vorhersehbar wird. 
 
