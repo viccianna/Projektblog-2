@@ -346,11 +346,11 @@ Wenn man ein anderes Spiel spielen möchte, muss man auf den „zurück“ Knopf
 
 Jetzt wisst ihr, wie wir unsere App „Das ABC macht Spaß!“ programmiert haben. 
 Auch oder gerade weil es immer wieder einige Rückschläge oder komplexe Probleme gab hat es uns schlussendlich doch sehr viel Spaß gemacht, da wir sehr glücklich mit unserer Idee und dem Ergebnis waren und das Programm ein schönes Design hatte. 
-Uns hat auch gefallen, dass wir nicht wieder mit Snap! Gearbeitet, sondern etwas komplett neues ausprobiert haben. 
+Uns hat auch gefallen, dass wir nicht wieder mit Snap! gearbeitet, sondern etwas komplett neues ausprobiert haben. 
 Besonders glücklich sind wir mit der Statistik, da unser Spiel so viel professioneller ist und es interessant ist zu sehen, wie oft etwas falsches oder richtiges angeklickt wurde. 
-Zeitlich hätte es allerdings überhaupt nicht geklappt, wenn wir uns nicht oft Zuhause an das Spiel ran gesetzt hätten und versucht haben Probleme zu lösen oder etwas neues einzufügen. 
+Zeitlich hätte es allerdings überhaupt nicht geklappt, wenn wir uns nicht oft Zuhause an das Spiel ran gesetzt und versucht hätten Probleme zu lösen oder etwas neues einzufügen. 
 An dem Fakt, dass wir das Zuhause gemacht haben sieht man aber ganz gut, dass es uns wirklich Spaß gemacht hat und wir das Spiel weiter perfektionieren wollten.
-Also können wir die Bilanz ziehen, dass wir Informatik wirklich genossen haben und es sehr schön ist, dass wir durch den Unterricht einen Einblick in etwas bekommen haben, mit dem wir uns vielleicht so nicht beschäftigt haben. 
+Also können wir die Bilanz ziehen, dass wir Informatik wirklich genossen haben und es sehr schön ist, dass wir durch den Unterricht einen Einblick in etwas bekommen haben, mit dem wir uns vielleicht sonst nicht beschäftigt hätten. 
 Zusätzlich können wir uns vorstellen auch in Zukunft unabhängig von der Schule noch mal ein Informatikprojekt selbstständig anzufangen, da es sehr schön ist wenn man sich mit etwas auseinander setzt, Lösungen findet und schließlich ein fertiges und funktionierendes Ergebnis hat mit dem man sehr zufrieden ist.
 Toll ist auch zu sehen, was wir in dem Jahr insgesamt für Fortschritte gemacht haben. Anfänglich hatten wir keine Ahnung, was wir uns unter Informatik vorstellen sollen und auch nach den ersten Stunden konnten wir uns nicht ausmalen einmal so ein Projekt zu erstellen, wie wir es jetzt haben. Der Unterricht war eine schöne Zeit und hat schließlich für uns sehr zufrieden stellende Ergebnisse geliefert. 
 
