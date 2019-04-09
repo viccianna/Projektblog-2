@@ -11,6 +11,12 @@ Ein Blog über unser programmiertes Spiel auf App-Labor.
 
 [2. Das Spiel](#2)
 
+[2.1 Spiel 1](#2.1)
+
+[2.2 Spiel 2](#2.2)
+
+[2.3 Spiel 3](#2.3)
+
 
 [3. Schlusswort](#3)
 
@@ -44,6 +50,9 @@ Das Spiel beginnt jetzt mit einer „*if*“ Funktion. Wenn man sich also auf de
 Der Bildschirm 27, auf den man dann weitergeleitet wird, ist der Übersichtsbildschirm auf dem man sich für eins der drei Spiele entscheiden kann. 
 
 ![bsp stride](images.exe./screen27.png)
+
+
+## <a name="2.1"></a> Spiel 1
 
 Wenn man das erste Spiel "*ABC lernen mit Bildern*" spielen möchte, muss man auf den „button1“ klicken. 
 
@@ -189,6 +198,9 @@ So lassen sich die Vorgänge auch besser nachvollziehen.
     }
     });
     })
+    
+    
+## <a name="2.2"></a> Spiel 2
 
 Bei unserem zweiten Spiel "*ABC lernen mit Wörtern*" geht es darum, dass die Spieler die richtige Schreibweise von vielen Wörtern lernen sollen. Dafür ist immer ein Symbol auf dem Bildschirm und drei Möglichkeiten, wie das Wort geschrieben werden könnte. 
 Auf das Spiel gelangt man, indem man auf dem Auswahlbildschirm („screen27“) auf den „button2“ klickt. Ähnlich wie beim ersten Spiel wird jetzt wieder ein zufälliger Bildschirm aufgerufen. Diesmal allerdings von den Screens 31 bis 58. 
@@ -284,6 +296,10 @@ Im Endeffekt heißen die Ergebnisse trotzdem „Richtig“ und „Falsch“ ohne
         ]);
       });
     }
+
+
+
+## <a name="2.3"></a> Spiel 3
 
 Unser drittes Spiel "*ABC lernen durch Hören*" ist dafür da, dass sich die Spieler noch mal alle Wörter zu den passenden Buchstaben anhören können. Zu diesem Spiel gelangt man, wenn man auf der Seite 27 auf den „button3“ klickt. Es wird nun ein zufälliger Bildschirm von 59 bis 65 aufgerufen. 
 
