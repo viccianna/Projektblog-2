@@ -48,6 +48,14 @@ Am Ende hat dann nur noch ein Name gefehlt. Schließlich haben wir uns für  „
 Das Spiel beginnt jetzt mit einer „*if*“ Funktion. Wenn man sich also auf dem „screen30“ befindet und den „button6“ klickt, wird der Sound „es geht los“ gespielt und der „screen27“ aufgerufen. Der Button 6 ist der „Los“ Knopf auf dem Startbildschirm. 
 Der Bildschirm 27, auf den man dann weitergeleitet wird, ist der Übersichtsbildschirm auf dem man sich für eins der drei Spiele entscheiden kann. 
 
+    setScreen("screen30");
+    if ("screen30") {
+      onEvent("button6", "click", function(event) {
+       playSound("esgehtlosAUDIO-2019-02-05-15-14-27.mp3", false);
+       setScreen("screen27");
+     });
+    }
+
 ![bsp stride](images.exe./screen27.png)
 
 
@@ -57,16 +65,9 @@ Wenn man das erste Spiel "*ABC lernen mit Bildern*" spielen möchte, muss man au
 
 ![bsp stride](images.exe./apfel.png)        (Diese Screenshots sollen eine Gesamtübersicht über die Befehlblöcke zur Orientierung dienen und werden daher vor jeder Spielerläuterung eingefügt)
 
-Mit der Variable, die wir dann eingefügt haben, definieren wir, dass „str“ ein  zufälliger Bildschirm zwischen 1 und 26 ist. Indem wir danach „setScreen str“ eingefügt haben wird jetzt ein einer dieser Screens zufällig aufgerufen. 
+Mit der Variable, die wir dann eingefügt haben, definieren wir, dass „str“ ein  zufälliger Bildschirm zwischen 1 und 26 ist. Indem wir danach „setScreen str“ eingefügt haben wird jetzt einer dieser Screens zufällig aufgerufen. 
 Das ist wichtig für unser Spiel, da wir keine feste Reihenfolge der Buchstaben haben wollten, damit das Spiel nicht vorhersehbar wird. 
 
-    setScreen("screen30");
-    if ("screen30") {
-      onEvent("button6", "click", function(event) {
-       playSound("esgehtlosAUDIO-2019-02-05-15-14-27.mp3", false);
-       setScreen("screen27");
-     });
-    }
     if ("screen27") {
       onEvent("button1", "click", function(event) {
         var str = "screen" + randomNumber(1, 26);
