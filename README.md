@@ -74,7 +74,7 @@ Das ist wichtig für unser Spiel, da wir keine feste Reihenfolge der Buchstaben 
         setScreen(str);
     
 Für jede der 26 Buchstaben des Alphabets haben wir einen Screen mit zwei Symbolen erstellt. Eins der Symbole fängt mit dem Buchstaben an, der auf dem Bildschirm gezeigt wird und ein Symbol nicht. Das heißt die Spieler müssen sich entscheiden, welches Symbol richtig ist und auf das müssen sie dann drauf klicken. 
-Da es immer unterschiedlich, ob das richtige Symbol das erste oder das zweite ist, haben wir bei jedem „image“ programmiert, als was es gewertet werden soll.
+Da es immer unterschiedlich, ob das richtige Symbol das Erste oder das Zweite ist, haben wir bei jedem „image“ programmiert, als was es gewertet werden soll.
 Bei „screen1“, auf dem das A abgebildet ist, ist das „image1“ also der Apfel das richtige Bild und das „image2“ also die Melonen sind das falsche Symbol. 
 
 ![bsp stride](images.exe./screen1.png)
